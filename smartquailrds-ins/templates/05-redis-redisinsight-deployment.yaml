@@ -40,7 +40,7 @@ spec:
         image: redislabs/redisinsight:latest #repo/image
         resources:
             requests:
-              cpu: 100m
+              cpu: 200m
               memory: 200M
             limits:
               cpu: 359m
