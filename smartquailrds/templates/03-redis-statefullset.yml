@@ -16,6 +16,13 @@ spec:
       initContainers:
       - name: config
         image: redis:6.2.3-alpine
+        resources:
+            requests:
+              cpu: 250m
+              memory: 500M
+            limits:
+              cpu: 359m
+              memory: 900M
         command: [ "sh", "-c" ]
         args:
           - |
